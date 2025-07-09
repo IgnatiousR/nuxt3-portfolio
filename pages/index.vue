@@ -12,7 +12,7 @@ const { data: home } = await useAsyncData(() => queryCollection('content').path(
 console.log(home)
 
 useSeoMeta({
-  title: 'Main page',
+  title: 'Main',
   description: 'Main Page',
   ogTitle: 'Main Page',
   ogDescription: '[og:description]',
