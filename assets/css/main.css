@@ -1,10 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); */
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @import "@nuxt/ui";
 
-body{
+/* body{
     @apply bg-neutral-100 dark:bg-neutral-950 text-black dark:text-white;
+} */
+
+:root {
+  /* --ui-radius: 0.25rem;
+  --ui-container: 90rem; */
+  --ui-bg: var(--ui-color-neutral-100);
+  --ui-text: var(--ui-color-neutral-900);
+}
+.dark {
+  --ui-bg: var(--ui-color-neutral-950);
+  --ui-text: var(--ui-color-neutral-50);
+  /* --ui-border: var(--ui-color-neutral-900); */
 }
 
 @theme {
