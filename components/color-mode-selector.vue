@@ -1,8 +1,12 @@
 <template>
     <div class="flex gap-2 items-center">
-        <div class="text-neutral-500 text-xs" v-if="showNextModelLabel">Change to {{ nextMode }}</div>
-        <button @click="toggleMode" @mouseenter="showNextModelLabel = true" @mouseleave="showNextModelLabel = false"
-        class="hover:bg-neutral-200 dark:hover:bg-neutral-600 px-2 py-1 text-neutral-500">{{ nextModeIcon }}</button>
+        <!-- <div class="text-neutral-500 text-xs" v-if="showNextModelLabel">Change to {{ nextMode }}</div> -->
+        <button
+        class="hover:bg-neutral-200 dark:hover:bg-neutral-600 px-2 py-1 text-neutral-500" 
+        @click="toggleMode" @mouseenter="showNextModelLabel = true" @mouseleave="showNextModelLabel = false">
+        {{ nextModeIcon }}</button>
+
+        <!-- <Icon name="line-md:moon-filled-alt-to-sunny-filled-loop-transition" style="color: white" /> -->
     </div>
 </template>
 
