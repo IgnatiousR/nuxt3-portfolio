@@ -1,9 +1,13 @@
 <script setup>
-useHead({
-    title: 'About'
-})
+// useHead({
+//     title: 'About'
+// })
+const { data: about } = await useAsyncData(() => queryCollection('content').path('/about').first())
 </script>
 
 <template>
-    <div>About Page</div>
+    <article class="prose dark:prose-invert text-center">
+        <ContentRenderer v-if="about" :value="about"/>
+        <div v-else>Something went wrong.</div>
+    </article>
 </template>
