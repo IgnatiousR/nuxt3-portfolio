@@ -6,7 +6,7 @@ const { data: about } = await useAsyncData(() => queryCollection('content').path
 </script>
 
 <template>
-    <article class="prose dark:prose-invert mx-20">
+    <article class="prose dark:prose-invert md:mx-20 ">
         <ContentRenderer v-if="about" :value="about"/>
         <div v-else>Something went wrong.</div>
     </article>
